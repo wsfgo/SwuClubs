@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#44e3e9e2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/mytoolbar"></include>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:background="@mipmap/bc_swujiaofei"
+       >
+      <com.example.swuclubmanage.com.wsf.utils.CircleImageView
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:layout_marginTop="19dp"
+          android:layout_marginLeft="30dp"
+          android:src="@mipmap/swuclubimg"
+          app:border_width="2dp"
+          app:border_color="#CCFF99"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:id="@+id/userNameImg">
+          </com.example.swuclubmanage.com.wsf.utils.CircleImageView>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:text="西大社团交费说明"
+           android:textSize="20sp"
+           android:id="@+id/textView11"
+           android:layout_marginTop="18dp"
+           android:layout_alignTop="@+id/userNameImg"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginRight="36dp"
+           android:layout_marginEnd="36dp" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:text="联系电话："
+           android:layout_marginTop="18dp"
+           android:id="@+id/textView12"
+           android:layout_below="@+id/userNameImg"
+           android:layout_alignLeft="@+id/textView11"
+           android:layout_alignStart="@+id/textView11" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceSmall"
+           android:text="15823527508"
+           android:layout_marginLeft="9dp"
+           android:layout_marginTop="3dp"
+           android:id="@+id/textView13"
+           android:layout_alignTop="@+id/textView12"
+           android:layout_toRightOf="@+id/textView12"
+           android:layout_toEndOf="@+id/textView12" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceSmall"
+           android:text="注意，最终解释权归西大社团所有，谢谢合作！"
+           android:id="@+id/textView14"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true" />
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="现场交现方式"
+            android:textSize="17sp"
+            android:layout_marginLeft="26dp"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textView2"
+            android:background="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/relativeLayout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         您好，现场交现的方式是你确定报名之后，工作人员在3个工作日内将于短信的方式通知您面试的地点和时间 如果面试通过，则现场根据报名点的人员给您的数据交费，谢谢！"
+
+                android:id="@+id/textView3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+
+            android:text="第三方支付平台交费"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="26dp"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+           android:id="@+id/layout3"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="        您好，第三方支付平台缴费的方式是在线报名。如果面试通过后，工作人员提醒你交取费用。并且第三方支付安正常缴费的80%交取，谢谢!"
+                android:id="@+id/textView5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注意事项"
+            android:textSize="17sp"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="26dp"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/layout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="        请注意，现场交费方式收取的费用不应多余40元。第三方支付平台支付时，任何人都不会向您寻要支付密码，请注意，有疑问请致电15823527508  (づ￣ 3￣)づ"
+                android:id="@+id/textView8"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="7dp"
+            android:background="@color/background_tab_pressed"
+            android:id="@+id/imageView4"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Site fees"
+            android:id="@+id/textView7"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignRight="@+id/textView10"
+            android:layout_alignEnd="@+id/textView10" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="24dp"
+            android:id="@+id/imageView6"
+            android:background="@color/background_tab_pressed"
+            android:layout_alignRight="@+id/imageView4"
+            android:layout_alignEnd="@+id/imageView4"
+            android:layout_alignTop="@+id/textView4" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="24dp"
+            android:id="@+id/imageView7"
+            android:background="@color/background_tab_pressed"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_alignRight="@+id/imageView6"
+            android:layout_alignEnd="@+id/imageView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Online payment"
+            android:id="@+id/textView9"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="matters needing attention"
+            android:id="@+id/textView10"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

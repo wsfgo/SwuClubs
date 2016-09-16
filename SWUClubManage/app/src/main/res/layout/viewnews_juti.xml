@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        layout="@layout/mytoolbar">
+
+    </include>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/viewjutiswipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <com.jude.rollviewpager.RollPagerView
+       android:layout_width="wrap_content"
+       android:layout_height="170dp"
+       app:rollviewpager_play_delay="3000"
+       android:id="@+id/mynewsjuti">
+   </com.jude.rollviewpager.RollPagerView>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:weightSum="1"
+        android:id="@+id/relativeLayout3"
+        android:layout_below="@+id/mynewsjuti"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <com.example.swuclubmanage.com.wsf.utils.CircleImageView
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:src="@mipmap/ic_touxiang"
+            android:layout_marginTop="8dp"
+            app:border_width="2dp"
+            android:layout_marginLeft="4dp"
+            app:border_color="#CCFF99"
+            android:layout_below="@+id/view2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/view3" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="书法社团新闻"
+            android:id="@+id/textView21"
+            android:layout_alignTop="@+id/view3"
+            android:layout_toRightOf="@+id/view3"
+            android:layout_toEndOf="@+id/view3" />
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:id="@+id/imageView11"
+            android:src="@mipmap/clubnewsimg"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/textView23"
+            android:layout_toStartOf="@+id/textView23" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="西大新闻社报道"
+            android:id="@+id/textView22"
+            android:layout_alignBottom="@+id/imageView11"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="57dp"
+            android:layout_marginEnd="57dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="2016-6-13"
+            android:id="@+id/textView23"
+            android:layout_alignBottom="@+id/imageView11"
+            android:layout_toLeftOf="@+id/textView22"
+            android:layout_toStartOf="@+id/textView22"
+            android:layout_marginRight="34dp"
+            android:layout_marginEnd="34dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/background_tab_pressed"
+            android:id="@+id/view6"></View>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/background_tab_pressed"
+            android:id="@+id/imageView13"
+            android:layout_below="@+id/view6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="摘要"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/textView24"
+            android:layout_alignTop="@+id/imageView13"
+            android:layout_toRightOf="@+id/imageView13"
+            android:layout_toEndOf="@+id/imageView13" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="     "
+            android:id="@+id/newsContent"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/imageView13"
+            android:layout_alignStart="@+id/imageView13" />
+    </RelativeLayout>
+
+</RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

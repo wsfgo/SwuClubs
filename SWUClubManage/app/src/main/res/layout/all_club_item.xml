@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/second"
+    android:layout_width="match_parent"
+    android:layout_height="225dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        android:id="@+id/textView20">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/clubImg"
+            android:layout_toStartOf="@+id/clubstar"
+            android:layout_toLeftOf="@+id/clubstar" />
+
+        <TextView
+            android:layout_width="79dp"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp"
+            android:id="@+id/clubname"
+            android:layout_below="@+id/clubImg"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="星级："
+            android:textColor="#6495ED"
+            android:id="@+id/clubstar"
+            android:textSize="16sp"
+            android:layout_marginLeft="26dp"
+            android:layout_alignBottom="@+id/clubstarimg"
+            android:layout_toRightOf="@+id/clubname"
+            android:layout_toEndOf="@+id/clubname" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="5"
+            android:textColor="#6495ED"
+            android:textSize="16sp"
+            android:id="@+id/clubstarvalue"
+            android:layout_alignTop="@+id/clubstar"
+            android:layout_toRightOf="@+id/clubstar"
+            android:layout_toEndOf="@+id/clubstar" />
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="音乐社团是一个充满音乐灵魂的地方，加入我们社团，让我们一起青春，一起疯"
+            android:id="@+id/clubdescrib"
+            android:layout_below="@+id/clubname"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/clubnameimg"
+            android:src="@mipmap/clubnamea"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/clubImg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="音乐社团"
+            android:textColor="#6495ED"
+            android:textSize="16sp"
+            android:id="@+id/clubname_value"
+            android:layout_alignTop="@+id/clubnameimg"
+            android:layout_toRightOf="@+id/clubstarimg"
+            android:layout_toEndOf="@+id/clubstarimg" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/clubstarimg"
+            android:src="@mipmap/clubstar"
+            android:layout_below="@+id/clubnameimg"
+            android:layout_toRightOf="@+id/clubImg"
+            android:layout_toEndOf="@+id/clubImg" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/clubministerimg"
+            android:src="@mipmap/clubminister"
+            android:layout_marginBottom="21dp"
+            android:layout_alignBottom="@+id/clubImg"
+            android:layout_alignLeft="@+id/clubstarimg"
+            android:layout_alignStart="@+id/clubstarimg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="部长："
+            android:textColor="#6495ED"
+            android:textSize="16sp"
+            android:id="@+id/clubministertag"
+            android:layout_alignBottom="@+id/clubministerimg"
+            android:layout_toRightOf="@+id/clubministerimg"
+            android:layout_toEndOf="@+id/clubministerimg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="王书发"
+            android:textColor="#6495ED"
+            android:textSize="16sp"
+            android:id="@+id/clubministerValue"
+            android:layout_alignBottom="@+id/clubministerimg"
+            android:layout_toRightOf="@+id/clubministertag"
+            android:layout_toEndOf="@+id/clubministertag" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView2"
+            android:src="@mipmap/clubdescrib"
+            android:layout_alignTop="@+id/clubdescrib"
+            android:layout_toLeftOf="@+id/clubdescrib"
+            android:layout_toStartOf="@+id/clubdescrib"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="13dp" />
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:background="@color/slight_gray"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView19"
+        android:textSize="10sp"
+        android:layout_below="@+id/textView20"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

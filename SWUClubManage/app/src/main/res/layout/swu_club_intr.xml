@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#FFFFFF">
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="4dp"
+                 android:background="@color/background_tab_pressed"
+                 android:id="@+id/view5">
+             </View>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="西大社团"
+                 android:textSize="19sp"
+                 android:id="@+id/textView16"
+                 android:layout_below="@+id/view5"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_marginLeft="35dp"
+                 android:layout_marginStart="35dp" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="9dp"
+                 android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:text="      西南大学学生社团联合会成立于2005年7月，是校团委下属六大学生组织之一，以“凝聚社团力量，繁荣校园文化”为宗旨，“服务，监督，扶持，创新”为口号，主要负责对全校校级学生社团及其活动实施管理与协调，实现学生社团共同目标的学生自治组织。"
+                 android:id="@+id/textView17"
+                 android:layout_below="@+id/textView16"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true" />
+
+             <ImageView
+                 android:layout_width="8dp"
+                 android:layout_marginTop="2dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_height="22dp"
+                 android:id="@+id/imageView8"
+                 android:background="@color/background_tab_pressed"
+                 android:layout_alignTop="@+id/textView16"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true" />
+
+           />
+
+
+         </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:background="@color/colorPrimary"
+    android:id="@+id/toolbar">
+
+    <ImageView
+        android:id="@+id/main_back"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:padding="12dp"
+        android:src="@mipmap/more"
+        />
+
+
+
+    <TextView
+        android:id="@+id/titlebar_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:text="首页"
+        />
+
+    <ImageView
+        android:id="@+id/mainrefresh"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:padding="12dp"
+        android:src="@mipmap/refresh"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="刷新"
+        android:id="@+id/shuaxin"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/myroll_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="180.dp"
+        app:rollviewpager_play_delay="3000"/>
+    <RelativeLayout
+        android:layout_below="@+id/myfourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/newsclubRecy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+  <RelativeLayout
+      android:id="@+id/myfourth"
+      android:layout_below="@id/myroll_view_pager"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <include
+          layout="@layout/mainfirst"></include>
+
+  </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>
+    </ScrollView>
+    </LinearLayout>

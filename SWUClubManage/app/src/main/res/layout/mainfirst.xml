@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/swu_club_intr"
+        ></include>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:id="@+id/firstrelay"
+      android:layout_height="wrap_content">
+
+  </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_height="220dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guangao"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:text="广告"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#66363636"
+            android:layout_alignBottom="@+id/guangao"
+            android:layout_marginTop="7dp"
+            android:id="@+id/view2"></View>
+           <com.example.swuclubmanage.com.wsf.utils.CircleImageView
+               android:layout_width="44dp"
+               android:layout_height="44dp"
+               android:src="@mipmap/swuclubimg"
+               android:layout_marginTop="8dp"
+               app:border_width="2dp"
+               android:layout_marginLeft="4dp"
+               app:border_color="#CCFF99"
+               android:layout_below="@+id/view2"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               android:id="@+id/view3" />
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="140dp"
+            android:id="@+id/guangaoimgvalue"
+            android:background="@mipmap/guangaoimg"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="我们专注于质量和美食，期待您的光临---乡村基"
+            android:id="@+id/advertisevalue"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignTop="@+id/view3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="电话："
+            android:id="@+id/textView28"
+            android:layout_alignTop="@+id/guangaoimgvalue"
+            android:layout_toRightOf="@+id/guangaoimgvalue"
+            android:layout_toEndOf="@+id/guangaoimgvalue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="1234567"
+            android:id="@+id/textView29"
+            android:layout_alignTop="@+id/textView28"
+            android:layout_toRightOf="@+id/textView28"
+            android:layout_toEndOf="@+id/textView28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="地址："
+            android:id="@+id/textView30"
+            android:layout_marginTop="42dp"
+            android:layout_below="@+id/textView28"
+            android:layout_toRightOf="@+id/guangaoimgvalue"
+            android:layout_toEndOf="@+id/guangaoimgvalue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="重百超市入口处"
+            android:id="@+id/textView31"
+            android:layout_alignTop="@+id/textView30"
+            android:layout_toRightOf="@+id/textView30"
+            android:layout_toEndOf="@+id/textView30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="联系人："
+            android:id="@+id/textView32"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/guangaoimgvalue"
+            android:layout_toEndOf="@+id/guangaoimgvalue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="王先生"
+            android:id="@+id/textView33"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/textView32"
+            android:layout_toEndOf="@+id/textView32" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/textView18" />
+
+</LinearLayout>
